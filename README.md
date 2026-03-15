@@ -237,7 +237,7 @@ Controls how the WhatsApp session identifies itself to the WhatsApp servers.
 |---|---|---|
 | `CONFIG_SESSION_PHONE_CLIENT` | `Evolution API` | Display name shown in WhatsApp's "Linked Devices" list on the phone. |
 | `CONFIG_SESSION_PHONE_NAME` | `Chrome` | Browser name sent in the session handshake. Affects how WhatsApp identifies the device type. |
-| `CONFIG_SESSION_PHONE_VERSION` | `2.3000.1015901307` | WhatsApp Web version reported to the server. Keep this updated if WhatsApp starts rejecting connections. |
+| `CONFIG_SESSION_PHONE_VERSION` | _(empty)_ | WhatsApp Web version reported to the server. **Leave empty** to let Evolution API auto-detect the latest compatible version. Setting a hardcoded value (e.g. `2.3000.1015901307`) is a known cause of QR code generation failures ([#1900](https://github.com/EvolutionAPI/evolution-api/issues/1900), [#1873](https://github.com/EvolutionAPI/evolution-api/issues/1873)). |
 
 ---
 
