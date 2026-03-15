@@ -345,7 +345,7 @@ openssl rand -hex 32
 | Service | Internal host | Exposed port |
 |---|---|---|
 | Evolution API | `evolution-api:8080` | `8080` |
-| PostgreSQL | `postgres:5432` | `5432` |
+| PostgreSQL | `postgres:5432` | `5433` |
 | Redis | `redis:6379` | `6379` |
 
 > Remove the `ports` entry from `postgres` and `redis` in `docker-compose.yml` if you don't need direct access from the host machine.
